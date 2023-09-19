@@ -29,9 +29,9 @@ if(b == 0){
 }else{
     c = a / b;
     if( a % b == 0){
-        cout << "A divisão é exata!" << endl;
+        cout << "A divisão é exata." << endl;
     }else{
-        cout << "A divisão não é exata!" << endl;
+        cout << "A divisão não é exata." << endl;
         }
         cout << "O valor da divisão em inteiro é: " << c << endl;
             }

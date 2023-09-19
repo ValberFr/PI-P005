@@ -13,9 +13,9 @@ int main()
     cin >> a;
     cin >> b;
     cin >> c;
-    
+    cout << endl;
+
     del = (pow(b,2) -4 * a * c );
-    cout << del << endl;
     if(del > 0){
         cout << "O polinômio possui 2 raizes distintas, sendo elas: " << (b * -1) + (sqrt(del/( 2 * a))) << " e " << (b * -1) - (sqrt(del/( 2 * a))) << endl; 
         }else if(del == 0){
@@ -23,13 +23,13 @@ int main()
             }else{
              cout << "O polinômio não possui raizes reais." << endl;   
             }
-    cout << endl
-    
-    cout << "Agora infome o valor de x do polinômio: " << endl;
-    cin >> x;
     cout << endl;
     
-    cout << "A expressão ao todo é " << a << x << "²" << b << x << c << ", sendo p(x)= " << pow((a*x),2)+(b*x)+c; 
-    
+    if(del > 0 || del == 0 ){
+        cout << "Agora infome o valor de x do polinômio: ";
+        cin >> x;
+        cout << endl;
+        cout << "A expressão ao todo é " << a << x << "²" << b << x << c << ", sendo p(x)= " << pow((a*x),2)+(b*x)+c << endl; 
+        }
     return 0;
 }

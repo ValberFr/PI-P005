@@ -5,7 +5,7 @@
 
 using namespace std;
 
-double x,y,z,fm,cc,de;
+double x,y,z,fm,de;
 
 int main()
 {
@@ -22,8 +22,8 @@ int main()
             }else{
                 cout << "A cordenada " << "[" << x << "," << y << "] " << "está na curva." << endl;
                 } 
-    de = sqrt(pow(x,2.0)+pow(y,2.0));
     
+    de = sqrt(pow(x,2.0)+pow(y,2.0));
     if(2 - de > 0){
         cout << "A distanca euclidiana em relação ao centro é de: " << 2 - de << endl;
     }else{
